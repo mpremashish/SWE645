@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="style.css" />
+<title>Student Survey Form</title>
+<meta charset="utf-8">
+</head>
+
+<body>
+	<div id="main">
+		<form id="survey-form">
+			<h1 style="color: black;" id="title" class="simple-highlight">Student Survey Form</h1><hr>
+			
+			<label id="name-label" for="name" class='required'>First Name</label>
+			<input type="text" name="name" id="Fname" placeholder="Enter First Name" required> 
+			
+			<label id="name-label" for="name">Last Name</label> 
+			<input type="text" name="name" id="Lname" placeholder="Enter Last Name" required> 
+			
+			<label id="email-label" for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="mail@email.com" required> 
+			
+			<label id="name-label" for="name">Address</label> 
+			<input type="address" name="name" id="Address" placeholder="Enter Street Address" required> 
+			
+			<label id="City-label" for="name">City</label>
+		
+			<label type="Right" id="State-label" for="name">State</label></br> 
+			
+			<input type="half-text" name="name" id="City" placeholder="Enter City" required> 
+			<input type="half-text"	name="name" id="State" placeholder="Enter State" required> 
+			
+			<label id="name-label" for="name">Zip</label>
+			<label type="Right" id="name-label" for="name">Telephone</label></br> 
+			
+			<input type="half-text" name="name" id="Zip" placeholder="Enter Zip Code" required> 
+			<input type="half-text" name="name" id="Phone" placeholder="Enter Phone Number" required> 
+			
+			<label id="name-label" for="name">Date of Survey</label> 
+			<input type="date" name="name" id="Date" placeholder="dd/MM/YYYY" required>
+			
+			<fieldset>
+				<legend>What do you like most about the campus?</legend>
+				<input type="checkbox" name="school" id="classes" value="Classes">
+				<label for="classes">Students</label><br>
+				<input type="checkbox" name="school" id="teachers" value="teachers">
+				<label for="teachers">Location</label><br> 
+				<input type="checkbox" name="school" id="culture" value="Food"> 
+				<label for="culture">Campus</label><br> 
+				<input type="checkbox" name="school" id="culture" value="Food"> 
+				<label for="culture">Atmosphere</label><br> 
+				<input type="checkbox" name="school" id="culture" value="Food"> 
+				<label for="culture">Dorm rooms</label><br> 
+				<input type="checkbox" name="school" id="culture" value="Food"> 
+				<label for="culture">Sports</label><br>
+			</fieldset>
+			
+			<fieldset>
+				<legend>How did you become interested in George Mason University</legend>
+				<input type="radio" name="course" id="RFriends" value="Friends">
+				<label for="RFriends">Friends</label><br> 
+				<input type="radio" name="course" id="RTV" value="Television"> 
+				<label for="RTV">Television</label><br> 
+				<input type="radio" name="course" id="RInternet" value="Internet"> 
+				<label for="RInternet">Internet</label><br>
+				<input type="radio" name="course" id="ROther" value="Other">
+				<label for="ROther">Other</label><br> 
+				<input type="Other-Text" name="other_reason" />
+			</fieldset>
+			
+			<label for="drop-down"> Would you recommend George Mason University to other prospective students?</label> 
+			<select name="drop-down" id="drop-down">
+				<option value="very likely">Very Likely</option>
+				<option value="likely">Likely</option>
+				<option value="unlikely">Unlikely</option>
+			</select><br><br>
+
+			<label id="raffle-label" for="raffle">Raffle:</label><br> 
+			<label>Enter at least ten comma separated numbers ranging from 1 through 100</label> 
+			<input type="text" id="raffle" placeholder="e.g. 1, 2, 36, 45, 21, 69, 77, 89, 97, 100 " required><br><br>
+			
+			<div class="form-floating">
+			<label for="comments">Additional Comments</label><br>
+			<textarea id="comments" rows="5" placeholder="Help us improve by providing suggestions."></textarea>
+			</div>
+			<br><br>
+			<div class="Submit_Reset">
+				<input type="reset" id="reset" value="Cancel">
+				<input type="submit" id="submit" value="Submit"> 
+			</div>
+		</form>
+
+	</div>
+</body>
+</html>

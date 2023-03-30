@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+* {
+	font-family: "Times New Roman", Times, serif;
+}
+
+body {
+	background-image: url("https://s.abcnews.com/images/Politics/george-mason-university-gty-jc-200828_1598651395624_hpMain_16x9_992.jpg");
+	background-size: auto;
+}
+
+#main {
+	width: 60%;
+	margin: auto;
+}
+
+label[type="Right"] {
+	margin-top: 10px;
+	margin-left: 245px;
+}
+
+label {
+	margin-top: 10px;
+	color: black;
+}
+
+legend {
+	color: black;
+}
+
+label span {
+	color: red;
+}
+
+fieldset {
+	margin-top: 10px;
+}
+
+#title {
+	text-align: center;
+	font-size: 42px;
+	color: black;
+}
+
+input[Type="text"], input[Type="address"], input[Type="date"], input[Type="email"],
+	select, textarea {
+	width: 99%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid rgb(53, 21, 21);
+	box-sizing: border-box;
+}
+
+input[Type="half-text"] {
+	width: 49%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	border: 1px solid rgb(53, 21, 21);
+	box-sizing: border-box;
+}
+
+input[Type="Other-Text"] {
+	width: 49%;
+	padding: 6px 20px;
+	margin: 8px 0;
+	border: 1px solid rgb(53, 21, 21);
+	box-sizing: border-box;
+}
+
+#survey-form, p {
+	border-radius: 10px;
+	font-size: 16px;
+	font-family: helvetica, sans-serif;
+	margin-left: 20%;
+	background-color: rgba(255,255,255,0.5);
+	margin: auto;
+	width: 80%;
+	padding: 1%;
+	margin-bottom: 20px;
+}
+
+.cancelbtn {
+	width: 80px;
+	height: 70px;
+	padding: 2px 2px;
+	background-color: #f44336;
+}
+
+.Submit_Reset{
+	text-align: center;
+}
+
+input[type=submit], input[type=reset] {
+	width: 40%;
+	padding: 12px 20px;
+	margin-inline: 10px;
+}
