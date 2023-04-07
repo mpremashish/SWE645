@@ -12,6 +12,7 @@ pipeline{
                 sh 'cd StudentSurvery/src/main/webapp && jar -cvf studentform.war *'
                 sh 'sudo -S docker build --tag mpremashish1/student-survey .'
                 sh 'echo ${BUILD_TIMESTAMP}'
+                sh 'echo ${DOCKERHUB_PASS}'
                 sh 'sudo docker login -u mpremashish1 -p ${DOCKERHUB_PASS}'
             }   
         }
