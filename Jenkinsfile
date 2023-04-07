@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage("Checkout"){
-            script{
+            steps{
                 sh 'echo ${BUILD_TIMESTAMP}'
             }   
         }
