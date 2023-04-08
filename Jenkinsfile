@@ -1,7 +1,7 @@
 pipeline{
     agent any
     environment{
-        DOCKERHUB_PASS = credentials('DockerPassword')
+        DOCKERHUB_PASS = credentials('password_docker')
     }
     stages{
         stage("Checkout"){
@@ -12,9 +12,7 @@ pipeline{
                 sh 'cd StudentSurvery/src/main/webapp && jar -cvf studentform.war *'
                 sh 'sudo -S docker build --tag mpremashish1/student-survey .'
                 sh("echo ${BUILD_TIMESTAMP}")
-                withCredentials([usernamePassword(credentialsId: "DockerPassword", passwordVariable: 'PASSWORD', usernameVariable: 'SCHEMA')]) {
-                sh 'sudo docker login -u \"$SCHEMA\" -p \"$SCHEMA/$PASSWORD\"'
-                }
+                sh('sudo docker login -u mpremashish1 -p \"${DOCKERHUB_PASS}\"')
             }   
         }
         stage("Push docker image"){
