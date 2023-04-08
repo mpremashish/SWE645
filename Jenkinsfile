@@ -10,7 +10,7 @@ pipeline{
                 sh 'ls'
                 sh 'pwd'
                 sh 'cd StudentSurvery/src/main/webapp && jar -cvf studentform.war *'
-                sh 'sudo -S docker build --tag mpremashish1/student-survey .'
+                sh("sudo -S docker build --tag mpremashish1/student-survey:${BUILD_TIMESTAMP} .")
                 sh("echo ${BUILD_TIMESTAMP}")
                 sh('sudo docker login -u mpremashish1 -p \"${DOCKERHUB_PASS}\"')
             }   
