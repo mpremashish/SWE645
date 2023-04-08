@@ -12,7 +12,7 @@ pipeline{
                 sh 'cd StudentSurvery/src/main/webapp && jar -cvf studentform.war *'
                 sh 'sudo -S docker build --tag mpremashish1/student-survey .'
                 sh("echo ${BUILD_TIMESTAMP}")
-                withCredentials([usernamePassword(credentialsId: DockerPassword, passwordVariable: 'PASSWORD', usernameVariable: 'SCHEMA')]) {
+                withCredentials([usernamePassword(credentialsId: "DockerPassword", passwordVariable: 'PASSWORD', usernameVariable: 'SCHEMA')]) {
                 sh 'sudo docker login -u \"$SCHEMA\" -p \"$SCHEMA/$PASSWORD\"'
                 }
             }   
