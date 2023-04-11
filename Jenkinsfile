@@ -1,3 +1,4 @@
+// authored by : Premashish Mukherjee, pmukher@gmu.edu
 pipeline{
     agent any
     environment{
